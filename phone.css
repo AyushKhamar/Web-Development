@@ -1,0 +1,88 @@
+/* navbar */
+
+#navbar{
+    flex-direction: column;
+    
+    /* flex-wrap: wrap; */
+}
+#navbar ul li a{
+    font-size: 1rem;
+    padding:0px 7px;
+    padding-bottom:8px;
+}
+/* home */
+#home{
+    height:400px;
+    padding: 3px 28px;
+}
+#home::before{
+   
+    height: 540px;
+    width:100%;
+}
+#home p{
+    font-size: 1.3rem;
+}
+/* services */
+.container{
+    margin-top: 10px;
+}
+#services{
+    flex-direction: column;
+    
+}
+#services .box{
+    padding:5px;
+    margin:2px 2px;
+    margin-bottom: 20px;
+    /* flex-wrap: wrap; */
+}
+
+
+/* clients */
+.clients{
+    flex-wrap: wrap;
+ 
+    
+}
+#clientsection{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#clientsection::before{
+    
+    height:400px;
+}
+.clients img{
+    width:66px;
+    padding:5px;
+    height:auto;
+    margin:5px
+}
+/* contact us */
+#contactus{
+    margin-top:55px;
+}
+#contactus form{
+    width: 80%;
+    
+}
+.contactbox{
+    margin:0px;
+    padding: 5px;
+}
+#contactus::before{
+    height:580px;
+    margin-top: 0;
+  
+}
+/* sundries */
+.primary{
+    font-size: 1.5rem;
+    padding:5px;
+}
+.secondary{
+    font-size: 1.5rem;
+}

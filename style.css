@@ -1,0 +1,251 @@
+*{
+    margin:0px;
+    padding:0px;
+    font-family: 'Ubuntu', sans-serif;
+}
+body{
+    background-color:  rgb(227, 248, 255);
+}
+html{
+    scroll-behavior: smooth;
+}
+#navbar{
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    
+    /* justify-content: center; */
+    
+}
+#navbar div img{
+    filter: invert(100%);
+}
+#logo{
+    margin:5px 5px;
+
+}
+#logo img{
+    height: 62px;
+    margin: 10px 14px;
+    border-radius: 500px;
+}
+#navbar::before{
+    content:"";
+    background-color: black;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+    top:0;
+    left:0;
+
+}
+#navbar ul{
+    display: flex;
+    list-style-type: none;
+   
+}
+#navbar ul li{
+    
+    font:1.3rem;
+}
+#navbar ul li  a{
+    display: block;
+    margin: 5px 10px;
+    padding:5px 10px;
+    text-decoration: none;
+    color:white;
+    border-radius: 25px;
+    
+    /* this is because if you hover over a and you se t the change the colour property then it will work in the padding area too.If i h=would have given the padding in the list item then it would have the hover effect only if you immmet=diately come over the word */
+}
+#navbar ul li a:hover{
+    color:black;
+    background-color: rgb(210, 244, 255);
+    /* border:1px solid black; */
+    
+}
+#home{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:5px 200px;
+    justify-content: center;
+    color:black;
+    height: 600px;
+}
+#home::before{
+    content:"";
+    background: url('bg.jpg') no-repeat center center/cover;
+    height: 100%;
+    width:100%;
+    z-index:-1;
+    opacity:0.7;
+    position: absolute;
+    top:0;
+    left:0;
+    height: 700px;
+
+}
+#home h1{
+    text-align: center;
+    color:black;
+    margin:10px;
+
+}
+#home p{
+    font-size: 1.5rem;
+}
+
+#services{
+    display: flex;
+    margin:20px;
+    /* align-items: center; */
+    /* justify-content: center; */
+    /* using this the content will remain forever in center and then you cant move it, plus if i have decided the width of the box then how will it adjust on changing the redndering and as a result of it we find the over flow */
+    /* background-color:  rgb(210, 244, 255); */
+
+
+}
+.box{
+    /* display: flex; */
+    /* flex-direction: column; */
+    border:2px solid black;
+    border-radius: 5px;
+    background-color:rgb(227, 248, 255);
+    padding:10px 10px;
+    margin:10px 10px;
+    /* width:450px; */
+}
+.box img{
+    height: 150px;
+    
+    display: block;
+    margin:auto;
+    border-radius: 10px;
+    border:1px solid white;
+}
+.box:hover{
+    box-shadow: 0px 0px 12px 2px rgb(51, 51, 51);
+    cursor: pointer;
+}
+#clientsection{
+    height: 344px;
+    /* background-color:  rgb(210, 244, 255); */
+    
+
+}
+#clientsection::before{
+    content: "";
+    background: url('bg2.jpg') no-repeat center center/cover;
+    position: absolute;
+    z-index: -1;
+    opacity:0.8;
+    width: 100%;
+    height: 50%;
+
+
+}
+.clients{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.clients img{
+    height:100px;
+    margin:30px;
+    padding:5px 5px;
+}
+.clients img:hover{
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px rgb(59, 58, 58);
+    border-radius: 5px;
+}
+/* utilityclasses */
+
+.primary{
+    font-size: 3.8rem;
+    padding:15px;
+}
+.secondary{
+    font-size: 2.5rem;
+    padding:15px;
+}
+#contactus{
+   position: relative;
+    /* border:2px solid black; */
+    
+
+}
+#contactus::before{
+    content: "";
+    height:100%;
+    width: 100%;
+    position: absolute;
+    background: url('bg3.jpg') no-repeat center center/cover;
+    z-index: -1;
+    opacity: 0.8;
+    margin-top:17px;
+
+    
+}
+#contactbox{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding:20px;
+    /* height: 40%; */
+
+}
+#contactbox input,#contactbox textarea{
+    width: 100%;
+    /* height: 40%; */
+    padding:0.7rem;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    border:2px solid black;
+   
+
+    
+}
+#contactbox input:hover,#contactbox textarea:hover{
+   box-shadow: 0px 0px 10px 2px rgb(59, 58, 58) ;
+
+}
+#contactbox form{
+    width:40%;
+    
+    /* height: 40%; */
+    
+}
+#contactbox label{
+    font-size: 1.5rem;
+}
+
+
+
+
+
+.btn{
+    padding:10px 10px;
+    font-size: 1.2rem;
+    margin:40px 10px;
+    border:2px solid black;
+    border-radius: 50px;
+}
+.btn:hover{
+    background-color: rgb(88, 77, 77);
+    color:whitesmoke;
+    cursor: pointer;
+}
+.center{
+    text-align: center;
+}
+
+
+
+
+  
